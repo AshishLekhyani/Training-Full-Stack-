@@ -1,32 +1,44 @@
 /* Define the global or root variables */
-:root{
-    --primaryColor:#213555;
-    --backgroundColor:#F5EFE7;
-    --primaryAccentColor:#4F709C;
-    --secondaryColor:#D8C4B6;
-    --whiteColor:white;
-    --blackColor:#222222;
-    --primaryFont:'Open Sans', sans-serif;
+:root {
+    --primaryColor: #213555;
+    --backgroundColor: #F5EFE7;
+    --primaryAccentColor: #4F709C;
+    --secondaryColor: #D8C4B6;
+    --whiteColor: white;
+    --blackColor: #222222;
+    --primaryFont: 'Open Sans', sans-serif;
+    --cursiveFont: 'Pacifico', cursive;
 
     --navbarHeight: 3rem;
 }
 
+a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+a:hover{
+    color: var(--primaryAccentColor);
+}
+
 /* Main CSS */
-body{
+body {
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
     font-family: var(--primaryFont);
 }
 
-.navigation{
+/* Navigation Bar */
+.navigation {
     background-color: var(--whiteColor);
     height: var(--navbarHeight);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    filter: drop-shadow(0px 3px 4px grey);
 }
 
-.logo{
+.logo {
     display: flex;
     height: 2rem;
     padding-left: 20px;
@@ -35,21 +47,85 @@ body{
     /* margin-right: 4rem; */
 }
 
-.logoImage{
+.logoImage {
     padding: 8px;
     height: 2rem;
     /* float: left; */
 }
 
-.contactImage{
+.contactImage {
     height: 2rem;
     padding: 8px;
 }
 
-.menuItems{
+.menuItems {
     flex-grow: 2;
 }
 
-.menuItem{
-    margin-left: 20px; ;
+.menuItem {
+    margin-left: 20px;
+    ;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    height: 450px;
+    background: linear-gradient(45deg, var(--secondaryColor), var(--primaryAccentColor));
+    filter: drop-shadow(0px 3px 4px grey);
+    /* x y radius color */
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+}
+
+.bannerLeft{
+    width: 50%;
+}
+
+/* .bannerRight{
+    width: 50%;
+} */
+
+.bannerimage {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+.greeting{
+        font-family: var(--cursiveFont);
+        font-size: 1.5rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.titlespan{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 0.5px;
+    margin: 5px 0px;
+}
+
+.description{
+    line-height: 2rem;
+    margin: 30px 0px;
+}
+
+.showCVButton{
+    background: linear-gradient(
+        white, rgb(205,205,205), rgb(215,215,215));
+        padding: 10px 15px;
+        border-radius: 5px;
+        filter: drop-shadow(5px 5px 3px grey);
+}
+
+.showCVButton:hover{
+    background: linear-gradient( white, rgb(215,215,215));
 }
