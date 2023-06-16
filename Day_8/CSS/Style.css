@@ -48,6 +48,11 @@ body {
     /* margin-right: 4rem; */
 }
 
+.logoTitle{
+    font-family: var(--cursiveFont);
+    font-size: 1rem;
+}
+
 .logoImage {
     padding: 8px;
     height: 2rem;
