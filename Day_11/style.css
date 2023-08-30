@@ -1,0 +1,65 @@
+.left{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: red;
+    animation-name: leftwala;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation: colorChanger 3s infinite; */
+    animation-timing-function:linear;
+}
+
+.right{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: blue;
+    animation-name: rightwala;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function:linear;
+}
+
+@keyframes leftwala{
+    0%{
+        transform: translate(0px,0px);
+        /* background-color: red;
+        transform: scale(0.3); */
+        /* transform: translate(0,0px); */
+    }
+    50%{
+        transform: translate(200px,200px);
+        /* background-color: green;
+        transform: scale(1); */
+        /* transform: translate(0,50px); */
+    }
+    100%{
+        /* background-color: blue;
+        transform: scale(3); */
+        transform: translate(400px,0px);
+    }
+}
+
+@keyframes rightwala{
+    0%{
+        transform: translate(300px,0px);
+        /* background-color: red;
+        transform: scale(0.3); */
+        /* transform: translate(0,0px); */
+    }
+    50%{
+        transform: translate(100px,200px);
+        /* background-color: green;
+        transform: scale(1); */
+        /* transform: translate(0,50px); */
+    }
+    100%{
+        /* background-color: blue;
+        transform: scale(3); */
+        transform: translate(-100px,0px);
+    }
+}
